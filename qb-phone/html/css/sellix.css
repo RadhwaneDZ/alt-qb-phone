@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+@font-face {
+    font-family: 'first';
+    src: url(https://cdn.discordapp.com/attachments/717894831208267786/749302811908374648/BACK_TO_BLACK_DEMO.TTF);
+}
+
+@font-face {
+    font-family: 'Julius Sans One', sans-serif;
+    src: url(https://cdn.discordapp.com/attachments/717894831208267786/749303717911855134/BAHNSCHRIFT.TTF);
+}
+
+.sellix-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(8, 8, 8);
+    overflow: hidden;
+}
+
+.sellix-app-header {
+    background-image: url("../img/apps/darksell-header.png");
+    position: absolute;
+    height: 9vh;
+    width: 100%;
+    background-color: #1d00a0;
+    text-align: center;
+    line-height: 12.5vh;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2vh;
+}
+
+.sellix-homescreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0vh;
+}
+
+.sellix-detailscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+}
+
+.sellix-items {
+    position: absolute;
+    width: 85%;
+    height: 44.5vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    top: 10.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    font-size: 1.0vh;
+}
+
+.sellix-items::-webkit-scrollbar {
+    display: none;
+}
+
+.sellix-item {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    /* box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15); */
+    transition: .08s linear;
+    margin-bottom: 1vh;
+    font-size: 0.5vh;
+}
+
+.sellix-item-firstletter {
+    position: relative;
+    line-height: 7vh;
+    left: 1.2vh;
+    background-color: #0f0052;
+    background-size: cover;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 2.0vh;
+    padding-right: 2.0vh;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.8vh;
+    transition: .05s linear;
+}
+
+#itemdata-price {
+    position: absolute;
+    text-align: right;
+    left: 11vh;
+    bottom: 0.7vh;
+    font-size: 1.2vh;
+}
+
+.sellix-title {
+    position: relative;
+    left: 27px;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.sellix-banned {
+    text-align: center;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.sellix-item:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+.sellix-item-data {
+    position: absolute;
+    left: 7vh;
+    color: white;
+    top: 2.2vh;
+    line-height: 1.3vh;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.0vh;
+}
+
+.sellix-itemdetails {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    height: 76%;
+    width: 84%;
+    margin: 0 auto;
+    left: 0vh;
+    right: 0;
+    top: 11vh;
+    font-size: 1.0vh;
+}
+
+.itemdetail-box-buyer, .itemdetail-box-location, .itemdetail-box-delivery, .itemdetail-box-item, .itemdetail-box-quantity, .itemdetail-box-price {
+    position: relative;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: .8vh;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Julius Sans One', sans-serif;
+    border-bottom: .1vh solid rgb(56, 56, 56);
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.item-answer {
+    float: right;
+    font-size: 1.0vh;
+}
+
+.sellix-footer-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(233, 233, 233);
+    transition: .05s linear;
+    text-align: center;
+    line-height: 5vh;
+    font-weight: bold;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5vh;
+}
+
+.sellix-footer-back:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.sellix-footer-take {
+    position: absolute;
+    bottom: 6vh;
+    width: 100%;
+    height: 5vh;
+    font-weight: bold;
+    background-color: #1d00a0;
+    color: white;
+    transition: .05s linear;
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5vh;
+}
+
+.sellix-footer-take:hover {
+    background-color: rgb(17, 0, 92);
+}

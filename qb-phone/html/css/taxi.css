@@ -1,0 +1,161 @@
+.drivers-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+}
+
+.drivers-header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    font-size: 1.8vh;
+}
+
+.drivers-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+
+.drivers-list {
+    background-image: url("../img/apps/taxi-backgroud.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+
+    position: absolute;
+    background-color: #00000033;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.drivers-list::-webkit-scrollbar {
+    display: none;
+}
+
+.driver-list {
+    display: none;
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.driver-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgb(42, 137, 214);
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.driver-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-drivers {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.driver-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(0deg);
+
+    transition: .08s ease-in-out;
+}
+
+.drivers-call-full {
+    position: absolute;
+    width: 40%;
+    height: 2vh;
+    background-color: #4CAF50;
+    margin: 30.5%;
+    bottom: 0%;
+}
+
+.drivers-call {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+    height:46px;
+    padding:10px 16px;
+    font-size:18px;
+    line-height:1.3333333;
+    border-radius:4px;
+    text-shadow:none;
+    cursor: pointer;
+    color:#fff;
+    background-color:#c5413e;
+}
+
+.drivers-call:hover {
+    background-color: #b62b2b;
+}
+
+.driver-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+    cursor: pointer;
+}
